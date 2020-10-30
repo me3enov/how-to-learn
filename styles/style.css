@@ -72,7 +72,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .header__square-pic {
@@ -81,7 +81,7 @@
   position: absolute;
   top: 30px;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   background-color: #2f80ed;
 }
 
@@ -137,7 +137,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0;
+  padding: 0 0 100px 0;
   margin: 0;
   background-color: #fff;
 }
@@ -150,6 +150,7 @@
   text-align: center;
   padding: 0;
   margin: 0 auto 20px;
+  z-index: 100;
   color: black;
 }
 
@@ -160,6 +161,7 @@
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
+  z-index: 100;
 }
 
 .table {
@@ -213,6 +215,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-top: 100px;
   background-color: #f2f2f2;
 }
 
@@ -223,7 +226,7 @@
   font-weight: bold;
   text-align: center;
   z-index: 100;
-  margin: 100px 0 70px 0;
+  margin: 0 0 70px 0;
   padding: 0;
   color: black;
 }
@@ -265,7 +268,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 2;
   padding: 0;
   margin: 0;
   color: black;
@@ -281,7 +284,7 @@
   background-color: #1f1f1f;
 }
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   color: #fff;
 }
 
@@ -289,7 +292,7 @@
   color: #fff;
 }
 
-.table_theme-dark {
+.table_theme_dark {
   color: #fff;
 }
 
@@ -312,7 +315,7 @@
   position: absolute;
   top: 0;
   right: -210px;
-  z-index: 2;
+  z-index: 1;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -339,27 +342,29 @@
 
 .footer__column {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-.footer__column_content-info {
+/* Закомментированные стили */
+/*
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column_content-social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 }
-
+*/
 .logo_place_footer {
   width: 183px;
   height: 35px;
@@ -426,14 +431,14 @@
   margin: auto 10px auto 0;
 }
 
-.social-icon_facebook {
+.footer__social-icon_theme_facebook {
   background-image: url(../images/facebook_color_white.svg);
 }
 
-.social-icon_vk {
+.footer__social-icon_theme_vk {
   background-image: url(../images/vk_color_white.svg);
 }
 
-.social-icon_instagram {
+.footer__social-icon_theme_instagram {
   background-image: url(../images/instagram_color_white.svg);
 }
