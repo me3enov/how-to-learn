@@ -5,6 +5,7 @@
   grid-column-gap: 100px;
   justify-content: center;
   width: 920px;
+  list-style-type: none;
   margin: auto;
   padding-top: 60px;
 }
