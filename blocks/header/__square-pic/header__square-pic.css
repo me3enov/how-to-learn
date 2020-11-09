@@ -4,5 +4,6 @@
   position: absolute;
   top: 30px;
   right: 0;
+  z-index: -2;
   background-color: #2f80ed;
 }
